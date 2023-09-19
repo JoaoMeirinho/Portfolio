@@ -11,15 +11,15 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 75px;
+  padding: 0 1.5rem;
 `;
 
 export const Title = styled.h1`
-  font-size: 2em;
+  font-size: clamp(20px, 7vw, 40px);
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 1.3em;
+  font-size: clamp(10px, 5vw, 20px);
   font-weight: 100;
 `;
 
@@ -28,7 +28,7 @@ export const ContentTitle = styled.div`
 `;
 
 export const Menu = styled.div`
-  font-size: 40px;
+  font-size: 30px;
   display: none;
   cursor: pointer;
 
@@ -83,7 +83,7 @@ export const Link = styled.a`
 
 export const CloseSideBar = styled.div`
   display: none;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
   position: absolute;
   top: 35px;
