@@ -7,11 +7,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 export const Content = styled.div`
-  width: 1120px;
+  width: 1220px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 75px;
 `;
 
 export const Title = styled.h1`
@@ -32,7 +32,7 @@ export const Menu = styled.div`
   display: none;
   cursor: pointer;
 
-  @media (max-width: 760px) {
+  @media (max-width: 870px) {
     display: flex;
   }
 `;
@@ -41,17 +41,15 @@ export const Nav = styled.nav`
   @keyframes show {
     0% {
       height: 0;
-      top: -100%;
     }
     100% {
       height: 100vh;
-      top: 0;
     }
   }
   display: flex;
   justify-content: space-around;
-  width: 25%;
-  @media (max-width: 760px) {
+  width: 50%;
+  @media (max-width: 870px) {
     animation: show 0.5s ease-out;
     animation-direction: alternate;
     display: ${(props) => (props.sidebar ? 'flex' : 'none')};
@@ -63,18 +61,20 @@ export const Nav = styled.nav`
     height: ${(props) => (props.sidebar ? '100vh' : '0')};
     width: 100vw;
   }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Link = styled.a`
   cursor: pointer;
   text-decoration: none;
-  padding: 17% 0;
   list-style: none;
   border-radius: 5px;
-  /* line-height: 100%; */
-  height: 100%;
-  width: 100%;
-
+  padding: 25px;
   &:hover {
     transition: all 0.3s;
     background: #434343;
@@ -87,9 +87,9 @@ export const CloseSideBar = styled.div`
   cursor: pointer;
   position: absolute;
   top: 35px;
-  right: 35px;
+  right: 75px;
 
-  @media (max-width: 760px) {
+  @media (max-width: 870px) {
     display: ${(props) => (props.sidebar ? 'flex' : 'none')};
   }
 `;

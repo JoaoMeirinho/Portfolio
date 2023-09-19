@@ -30,9 +30,18 @@ export default function Header() {
           <CloseSideBar onClick={showSideBar} sidebar={sidebar}>
             <FaTimes />
           </CloseSideBar>
-          <Link>menu</Link>
-          <Link>menu</Link>
-          <Link>menu</Link>
+          <li>
+            <Link>Início</Link>
+          </li>
+          <li>
+            <Link>Projetos</Link>
+          </li>
+          <li>
+            <Link>Habilidades</Link>
+          </li>
+          <li>
+            <Link>Contatos</Link>
+          </li>
         </Nav>
       </Content>
     </Container>
