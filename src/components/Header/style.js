@@ -19,7 +19,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-  font-size: clamp(10px, 5vw, 20px);
+  font-size: clamp(10px, 4.5vw, 25px);
   font-weight: 100;
 `;
 
@@ -28,7 +28,7 @@ export const ContentTitle = styled.div`
 `;
 
 export const Menu = styled.div`
-  font-size: 30px;
+  font-size: clamp(35px, 7vw, 50px);
   display: none;
   cursor: pointer;
 
@@ -41,22 +41,25 @@ export const Nav = styled.nav`
   @keyframes show {
     0% {
       height: 0;
+      opacity: 0;
     }
     100% {
       height: 100vh;
+      opacity: 1;
     }
   }
   display: flex;
   justify-content: space-around;
   width: 50%;
   @media (max-width: 870px) {
+    opacity: ${(props) => (props.sidebar ? '1' : '0')};
     animation: show 0.5s ease-out;
     animation-direction: alternate;
     display: ${(props) => (props.sidebar ? 'flex' : 'none')};
     flex-direction: column;
     background-color: #161616;
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
     height: ${(props) => (props.sidebar ? '100vh' : '0')};
     width: 100vw;
@@ -83,11 +86,11 @@ export const Link = styled.a`
 
 export const CloseSideBar = styled.div`
   display: none;
-  font-size: 30px;
+  font-size: clamp(35px, 7vw, 50px);
   cursor: pointer;
   position: absolute;
-  top: 35px;
-  right: 75px;
+  top: 30px;
+  right: 25px;
 
   @media (max-width: 870px) {
     display: ${(props) => (props.sidebar ? 'flex' : 'none')};
