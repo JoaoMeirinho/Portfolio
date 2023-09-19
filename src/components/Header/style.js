@@ -51,9 +51,9 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-around;
   width: 25%;
-  animation: show 0.5s ease-out;
-  animation-direction: alternate;
   @media (max-width: 760px) {
+    animation: show 0.5s ease-out;
+    animation-direction: alternate;
     display: ${(props) => (props.sidebar ? 'flex' : 'none')};
     flex-direction: column;
     background-color: #161616;
