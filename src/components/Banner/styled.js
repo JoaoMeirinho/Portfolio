@@ -5,6 +5,7 @@ export const Space = styled.section`
   position: absolute;
   right: 0;
   left: 0;
+  z-index: -1;
   height: ${({ heigth }) => heigth || '50vh'};
   min-height: 300px;
   max-height: 400px;
