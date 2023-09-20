@@ -9,7 +9,7 @@ import {
   Nav,
   Link,
   CloseSideBar,
-} from './style';
+} from './styled';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {

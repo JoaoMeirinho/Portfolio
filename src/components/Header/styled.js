@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lightDark, lightWhite, yellow } from '../../config/colors';
 
 export const Container = styled.div`
   height: 100px;
@@ -74,13 +75,14 @@ export const Nav = styled.nav`
 
 export const Link = styled.a`
   cursor: pointer;
+  font-size: clamp(15px, 5vw, 20px);
   text-decoration: none;
   list-style: none;
   border-radius: 5px;
   padding: 25px;
   &:hover {
     transition: all 0.3s;
-    background: #434343;
+    background: ${lightWhite};
   }
 `;
 
