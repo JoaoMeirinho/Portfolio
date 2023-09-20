@@ -37,7 +37,6 @@ export const Destac = styled.span`
   background: ${colors.yellow};
   padding: 5px;
   border-radius: 5px;
-  margin: 0 10px;
 `;
 
 export const ButtonCurriculum = styled.a`

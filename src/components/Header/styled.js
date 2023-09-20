@@ -50,8 +50,8 @@ export const Nav = styled.nav`
     }
   }
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: space-evenly;
+  width: 55%;
   @media (max-width: 870px) {
     opacity: ${(props) => (props.sidebar ? '1' : '0')};
     animation: show 0.5s ease-out;
@@ -75,7 +75,7 @@ export const Nav = styled.nav`
 
 export const Link = styled.a`
   cursor: pointer;
-  font-size: clamp(15px, 5vw, 20px);
+  font-size: clamp(15px, 4.5vw, 18px);
   text-decoration: none;
   list-style: none;
   border-radius: 5px;
