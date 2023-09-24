@@ -1,8 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import * as colors from '../config/colors';
-export default createGlobalStyle`
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100&display=swap'); */
 
+export default createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +24,37 @@ button {
 li {
   list-style: none;
 }
+`;
+
+export const Title = styled.h1`
+  text-align: center;
+  font-size: clamp(40px, 8vw, 60px);
+`;
+
+export const Text = styled.p`
+  margin-top: 30px;
+  text-align: center;
+  font-size: clamp(15px, 3vw, 25px);
+  font-weight: 200;
+`;
+
+export const Space = styled.section`
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: ${({ heigth }) => heigth || '50vh'};
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+export const Destac = styled.span`
+  background: ${colors.yellow};
+  padding: 5px;
+  border-radius: 5px;
 `;
 // export const Container = styled.section`
 //   max-width: 360px;

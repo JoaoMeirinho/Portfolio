@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {
   Container,
-  Title,
+  LogoTitle,
   Subtitle,
   Content,
   ContentTitle,
@@ -20,7 +20,7 @@ export default function Header() {
     <Container>
       <Content>
         <ContentTitle>
-          <Title>João Meirinho</Title>
+          <LogoTitle>João Meirinho</LogoTitle>
           <Subtitle>Web Developer</Subtitle>
         </ContentTitle>
         <Menu>

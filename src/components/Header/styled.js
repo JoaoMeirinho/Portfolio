@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Title } from '../../styles/Globals';
 import { lightDark, lightWhite, yellow } from '../../config/colors';
 
 export const Container = styled.div`
@@ -15,7 +16,7 @@ export const Content = styled.div`
   padding: 0 1.5rem;
 `;
 
-export const Title = styled.h1`
+export const LogoTitle = styled(Title)`
   font-size: clamp(20px, 7vw, 40px);
 `;
 

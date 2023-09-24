@@ -1,11 +1,6 @@
-import {
-  Space,
-  TextBanner,
-  Title,
-  Text,
-  ButtonCurriculum,
-  Destac,
-} from './styled';
+import { TextBanner, ButtonCurriculum } from './styled';
+
+import { Title, Text, Space, Destac } from '../../styles/Globals';
 
 import Curriculo from '../../curriculum_joao_meirinho.pdf';
 

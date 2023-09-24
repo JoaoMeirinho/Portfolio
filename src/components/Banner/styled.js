@@ -1,42 +1,12 @@
 import styled from 'styled-components';
 import * as colors from '../../config/colors';
 
-export const Space = styled.section`
-  position: absolute;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  height: ${({ heigth }) => heigth || '50vh'};
-  min-height: 300px;
-  max-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
-
 export const TextBanner = styled.div`
   /* width: 45%; */
   max-height: 100%;
   padding: 20px;
   justify-content: start;
   align-items: center;
-`;
-
-export const Title = styled.h1`
-  text-align: center;
-  font-size: clamp(40px, 8vw, 60px);
-`;
-export const Text = styled.p`
-  margin-top: 30px;
-  text-align: center;
-  font-size: clamp(15px, 3vw, 25px);
-  font-weight: 200;
-`;
-
-export const Destac = styled.span`
-  background: ${colors.yellow};
-  padding: 5px;
-  border-radius: 5px;
 `;
 
 export const ButtonCurriculum = styled.a`
