@@ -1,18 +1,21 @@
-import { TextBanner, ButtonCurriculum } from './styled';
+import { TextBanner, ButtonCurriculum, Svg } from './styled';
 
 import { Title, Text, Space, Destac } from '../../styles/Globals';
 
 import Curriculo from '../../curriculum_joao_meirinho.pdf';
 
+import SvgVector from '../../images/code_thinking.svg';
+
 export default function Banner() {
   return (
     <Space heigth="75vh">
       <TextBanner>
-        <Title>
-          Em <Destac>Breve!</Destac>
+        <Title align="start">
+          Seu <Destac>Próximo</Destac> Desenvolvedor Web!
         </Title>
-        <Text>
-          Mas enquanto isso, você já pode fazer o download do meu currículo:
+        <Text align="start">
+          Faça já o <Destac>Download</Destac> do meu currículo para mais
+          informações sobre mim!
         </Text>
         <ButtonCurriculum
           href={Curriculo}
@@ -23,6 +26,9 @@ export default function Banner() {
           BAIXAR CURRÍCULO
         </ButtonCurriculum>
       </TextBanner>
+      {/* <TextBanner> */}
+      <Svg src={SvgVector} />
+      {/* </TextBanner> */}
     </Space>
   );
 }

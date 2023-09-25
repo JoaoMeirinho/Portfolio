@@ -27,15 +27,21 @@ li {
 `;
 
 export const Title = styled.h1`
-  text-align: center;
+  text-align: ${(props) => props.align || 'center'};
   font-size: clamp(40px, 8vw, 60px);
+  @media (max-width: 1100px) {
+    text-align: ${(props) => (props.allowMedia ? props.align : 'center')};
+  }
 `;
 
 export const Text = styled.p`
   margin-top: 30px;
-  text-align: center;
+  text-align: ${(props) => props.align || 'center'};
   font-size: clamp(15px, 3vw, 25px);
-  font-weight: 200;
+  font-weight: 300;
+  @media (max-width: 1100px) {
+    text-align: ${(props) => (props.allowMedia ? props.align : 'center')};
+  }
 `;
 
 export const Space = styled.section`
@@ -48,7 +54,7 @@ export const Space = styled.section`
   max-height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const Destac = styled.span`
