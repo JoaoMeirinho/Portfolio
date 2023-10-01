@@ -20,7 +20,7 @@ export const ContentImage = styled.div`
   width: 35%;
   /* margin: 20px; */
   border-radius: 5px;
-  margin: 10px;
+  margin: 15px;
   @media (max-width: 1100px) {
     width: 75%;
   }
