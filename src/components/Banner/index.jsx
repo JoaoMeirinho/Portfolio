@@ -8,7 +8,7 @@ import SvgVector from '../../images/code_thinking.svg';
 export default function Banner() {
   return (
     <>
-      <Space heigth="50vh">
+      <Space heigth="75vw">
         <TextBanner>
           <Title align="start">
             Seu <Destac>Próximo</Destac> Desenvolvedor Web!

@@ -37,7 +37,7 @@ export const Title = styled.h1`
 export const Text = styled.p`
   margin-top: 30px;
   text-align: ${(props) => props.align || 'center'};
-  font-size: clamp(15px, 3vw, 25px);
+  font-size: clamp(15px, 2.5vw, 20px);
   font-weight: 300;
   @media (max-width: 1100px) {
     text-align: ${(props) => (props.allowMedia ? props.align : 'center')};
@@ -50,10 +50,11 @@ export const Space = styled.section`
   left: 0;
   height: ${({ heigth }) => heigth || '50vh'};
   min-height: 300px;
-  /* max-height: 400px; */
+  max-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid red;
 `;
 
 export const Destac = styled.span`

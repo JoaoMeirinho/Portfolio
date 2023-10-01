@@ -23,6 +23,7 @@ export const ButtonCurriculum = styled.a`
   border-radius: 5px;
   padding: 20px;
   font-weight: 400;
+  margin-top: 30px;
 
   &:hover {
     background: ${colors.yellow};
