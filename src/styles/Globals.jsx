@@ -54,7 +54,7 @@ export const Space = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `;
 
 export const Destac = styled.span`
