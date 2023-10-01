@@ -15,8 +15,8 @@ export const TextBanner = styled.div`
 
 export const ButtonCurriculum = styled.a`
   display: inline-block;
-  margin-top: 30px;
-  font-size: clamp(15px, 2vw, 35px);
+  /* margin-top: 30px; */
+  font-size: clamp(15px, 1.5vw, 25px);
   background: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;

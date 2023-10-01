@@ -45,13 +45,12 @@ export const Text = styled.p`
 `;
 
 export const Space = styled.section`
-  position: absolute;
+  position: relative;
   right: 0;
   left: 0;
-  z-index: -1;
   height: ${({ heigth }) => heigth || '50vh'};
   min-height: 300px;
-  max-height: 400px;
+  /* max-height: 400px; */
   display: flex;
   align-items: center;
   justify-content: center;

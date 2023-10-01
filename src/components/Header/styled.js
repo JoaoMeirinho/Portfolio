@@ -62,6 +62,7 @@ export const Nav = styled.nav`
     flex-direction: column;
     background-color: #161616;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     height: ${(props) => (props.sidebar ? '100vh' : '0')};
