@@ -15,9 +15,14 @@ export default function About() {
         <TextParagraph>
           Formado em Informática para Internet e graduando em Ciências da
           Computação, atualmente estou procurando minha primeira oportunidade
-          como desenvolvedor Back-end. Procuro colocar meus conhecimentos em
+          como desenvolvedor Back-end.
+        </TextParagraph> 
+        <TextParagraph>
+          Procuro colocar meus conhecimentos em
           prática por meio de projetos, como você poderá ver em breve!
         </TextParagraph>
+        
+        
       </ContentImage>
     </Box>
   );

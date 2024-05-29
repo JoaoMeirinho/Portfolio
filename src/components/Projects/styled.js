@@ -10,15 +10,39 @@ export const Box = styled.section`
   margin-bottom: 30px;
   padding: 20px;
   width: 75vw;
-  background: ${colors.lightWhite};
+  background: transparent;
+  border: 2px solid ${colors.yellow};
   border-radius: 5px;
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
   }
 `;
 
+export const Card = styled.section`
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  width: 35vw;
+  min-width: 100px;
+  background: transparent;
+  border: 2px solid ${colors.lightWhite};
+  border-radius: 5px;
+  &:hover {
+    /* background: ${colors.yellow}; */
+    border: 2px solid ${colors.yellow};
+    box-shadow: 0px 0px 27px 0px rgba(255, 211, 0, 1);
+    transition: all 0.3s;
+  }
+  /* @media (max-width: 1100px) {
+    flex-direction: column-reverse;
+  } */
+`;
+
 export const ContentImage = styled.div`
-  width: 35%;
+  width: 45%;
   /* margin: 20px; */
   border-radius: 5px;
   margin: 15px;
@@ -38,5 +62,4 @@ export const TextTitle = styled(Title)`
 
 export const TextParagraph = styled(Text)`
   font-size: clamp(15px, 2.5vw, 20px);
-  text-align: start;
 `;
