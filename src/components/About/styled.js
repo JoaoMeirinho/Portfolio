@@ -7,7 +7,6 @@ export const Box = styled.section`
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
   padding: 20px;
   width: 75vw;
   background: ${colors.lightWhite};
@@ -38,5 +37,4 @@ export const TextTitle = styled(Title)`
 
 export const TextParagraph = styled(Text)`
   font-size: clamp(15px, 2.5vw, 20px);
-  text-align: start;
 `;
