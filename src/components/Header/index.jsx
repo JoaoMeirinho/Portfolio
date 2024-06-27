@@ -21,7 +21,7 @@ export default function Header() {
       <Content>
         <ContentTitle>
           <LogoTitle>João Meirinho</LogoTitle>
-          <Subtitle>Web Developer</Subtitle>
+          <Subtitle>Back-End Developer</Subtitle>
         </ContentTitle>
         <Menu>
           <FaBars onClick={showSideBar} />
